@@ -13,10 +13,17 @@ class LoginForm extends Component {
           placeholder="user@gmail.com"
           value={this.state.email}
           onChangeText={email => this.setState({ email })}
+          secureTextEntry={false}
           />
         </CardSection>
         <CardSection>
-          
+          <Input
+            placeholder="password"
+            value={this.state.password}
+            onChangeText={password => this.setState({ password })}
+            label="Password"
+            secureTextEntry
+          />
         </CardSection>
         <CardSection>
           <Button>
